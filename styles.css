@@ -1,0 +1,121 @@
+:root{
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%)
+}
+*{
+  font-size: 15px;
+  font-family: Overpass;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: white;
+}
+.attribution{
+  margin: 10vh 0 2vh 0;
+}
+body{
+  background-color: var(--Very-Dark-Blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-width: 390px;
+}
+                                                      /*Rating section*/
+.ratingSection{ 
+  background-color: var(--Dark-Blue);
+  width: 380px;
+  min-width: 380px;
+  height: fit-content;
+  padding: 40px 28px;
+  border-radius: 20px;
+}
+ h1{
+  font-size: 28px;
+  margin: 1.5em 0 15px 0;
+}
+ p{
+  color: var(--Light-Grey);
+  margin: 15px 0 25px 0;
+  line-height: 22px;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+li{
+  background-color: hsl(216, 21%, 26%);
+  color: var(--Light-Grey);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s ease;
+}
+li:hover{
+  background-color: var(--Light-Grey);
+  color: white;
+}
+
+.clicked{
+  background-color: var(--Orange);
+  color: white;
+}
+.submitBtn{
+color: white;
+background-color: var(--Orange);
+padding: 12px;
+margin-top: 2em;
+border-radius: 25px;
+width: 100%;
+cursor: pointer;
+transition: 0.3s ease;
+}
+.submitBtn:hover{
+background-color: whitesmoke;
+color: var(--Orange);
+}
+.submitBtn:active{
+transform: translateY(-5px);
+opacity: 0.5;
+}
+                                                      /*Thank-you section*/
+ .warning{
+  color: red;
+ }                                                    
+ .thanksSection{
+  background-color: var(--Dark-Blue);
+  width: 380px;
+  height: fit-content;
+  padding: 35px 38px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: none;
+ }
+ .selectResult, span{
+  color: var(--Orange);
+  background-color: var(--Dark-Blue);
+ }
+
+  .thanksSection h1{
+    margin: 15px 0 0 0;
+  }
+.thanksSection .selectResult{
+  margin: 20px 0 15px 0;
+ }   
+          
