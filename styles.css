@@ -25,13 +25,12 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh;
-  min-width: 410px;
+  min-width: 390px
 }
                                                       /*Rating section*/
 .ratingSection{ 
   background-color: var(--Dark-Blue);
   width: 380px;
-  min-width: 380px;
   height: fit-content;
   padding: 40px 28px;
   border-radius: 20px;
