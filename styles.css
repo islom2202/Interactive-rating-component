@@ -25,7 +25,7 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh;
-  min-width: 390px
+  min-width: 375px;
 }
                                                       /*Rating section*/
 .ratingSection{ 
@@ -118,3 +118,9 @@ opacity: 0.5;
   margin: 20px 0 15px 0;
  }   
           
+@media (max-width: 375px){
+.ratingSection{
+  width: 96vw;
+  min-width: 360px;
+}
+}
